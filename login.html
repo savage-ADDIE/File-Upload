@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Attendance Uploading System</title>
+    <link rel = "icon" href = "images/login.png" type = "image/x-icon">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Raleway&family=Roboto:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Raleway&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+    <nav>
+        <div class="container nav_container">
+            <a href="index.html"><img src="images/login.png" alt=""></a>
+            <h3>Daily Attendance Uploading System</h3>
+            <ul class="nav_menu">
+                <li>
+                    <form action="index.html">
+                        <tr>
+                            <td>
+                                <input type="submit" class="btn btn-primary" value="LOGOUT">
+                                       
+                            </td>
+                        </tr>
+                    </form>
+                </li>
+             
+            </ul> 
+        </div>
+    </nav>
+
+    <section class="about_introduction">
+        
+    </section>
+
+    <section class="team">
+        <h2>Upload The Attendance Here</h2>
+        <div class="container team_container">
+
+               
+                <tr>
+                    <td>Department: </td>
+                    <td>
+                        <select required>
+                            <option> ---SELECT---</option>
+                            <option>B. Tech CSE</option>
+                            <option>B. Tech CE</option>
+                            <option>B. Tech ME</option>
+                            <option>BSC IT</option>
+                            <option>B. Tech ECE</option>
+                            <option>B. Tech Bio Tech</option>
+                        </select><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Semester: </td>
+                    <td>
+                        <select>
+                            <option> ---SELECT---</option>
+                            <option>EVEN</option>
+                            <option>ODD</option>
+                        </select><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Academic Year: </td>
+                    <td>
+                        <select>
+                            <option> ---SELECT---</option>
+                            <option>2020-2024</option>
+                            <option>2021-2025</option>
+                            <option>2022-2026</option>
+                            <option>2022-2026</option>
+                            <option>2023-2027</option>
+                            <option>2024-2028</option>
+                        </select><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Class Type: </td>
+                    <td>
+                        <select>
+                            <option> ---SELECT---</option>
+                            <option>Lecture</option>
+                            <option>Practical</option>
+                            <option>Tutorial</option>
+                        </select><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mode of Class: </td>
+                    <td>
+                        <select>
+                            <option> ---SELECT---</option>
+                            <option>Online</option>
+                            <option>Offline</option>
+                            <option>Hybrid</option>
+                        </select><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Attendance File: </td>
+                    <td>
+                        <input type="file" name="" required><br><br>
+                    </td>
+                </tr>
+                
+                    <button type="submit" class="btn" onclick="login.html">Clear fields</button>
+                    <input type="submit" class="btn" onclick="openPopup()" value="Submit Attendance">
+                    <div class="popup" id="popup">
+                        <img src="images/tick.png" alt="">
+                        <h2>Attendance have been uploaded</h2>
+                        <button type="button" onclick="closePopup()">Ok</button>
+                    </div>
+                
+         </section>
+
+    <footer class="footer">
+        <div class="container footer_container">
+        <div class="footer_copyright">
+            <small>copyright &copy; SKD 2023</small>
+        </div>
+    </footer>
+
+ 
+
+    <script>
+        let popup = document.getElementById("popup");
+        function openPopup()
+        {
+            popup.classList.add("open-popup")
+        }
+        function closePopup()
+        {
+            popup.classList.remove("open-popup")
+        }
+    </script>
+</body>
+</html>
