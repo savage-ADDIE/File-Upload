@@ -51,37 +51,48 @@
                             <option> ---SELECT---</option>
                             <option>B. Tech CSE</option>
                             <option>B. Tech CE</option>
+                            <option>B. Tech CE & CA</option>
                             <option>B. Tech ME</option>
-                            <option>BSC IT</option>
+                            <option>B. Tech IT</option>
                             <option>B. Tech ECE</option>
-                            <option>B. Tech Bio Tech</option>
                         </select><br><br>
                     </td>
                 </tr>
                 <tr>
+                    <tr>
+                        <td>Batch: </td>
+                        <td>
+                            <select>
+                                <option> ---SELECT---</option>
+                                <option>2020-2024</option>
+                                <option>2021-2025</option>
+                                <option>2022-2026</option>
+                                <option>2023-2027</option>
+                                <option>2024-2028</option>
+                            </select><br><br>
+                        </td>
+                    </tr>
                     <td>Semester: </td>
                     <td>
                         <select>
                             <option> ---SELECT---</option>
-                            <option>EVEN</option>
-                            <option>ODD</option>
+                            <option>EVEN(II, IV, VI, VIII, X)</option>
+                            <option>ODD(I, III, V, VII, IX)</option>
                         </select><br><br>
                     </td>
                 </tr>
-                <tr>
-                    <td>Academic Year: </td>
+                <td>Section: </td>
                     <td>
                         <select>
                             <option> ---SELECT---</option>
-                            <option>2020-2024</option>
-                            <option>2021-2025</option>
-                            <option>2022-2026</option>
-                            <option>2022-2026</option>
-                            <option>2023-2027</option>
-                            <option>2024-2028</option>
+                            <option>A</option>
+                            <option>B</option>
+                            <option>C</option>
+                            <option>D</option>
                         </select><br><br>
                     </td>
                 </tr>
+                
                 <tr>
                     <td>Class Type: </td>
                     <td>
@@ -107,16 +118,17 @@
                 <tr>
                     <td>Attendance File: </td>
                     <td>
-                        <input type="file" name="" required><br><br>
-                    </td>
-                </tr>
-                
-                    <input type="submit" class="btn" onclick="openPopup()" value="Submit Attendance">
+                        <input type="file" name="" required>
+                        <input type="submit" class="btn" onclick="openPopup()" value="Submit Attendance">
                     <div class="popup" id="popup">
                         <img src="images/tick.png" alt="">
                         <h2>Attendance have been uploaded</h2>
                         <button type="button" onclick="closePopup()">Ok</button>
                     </div>
+                    </td>
+                </tr>
+                
+                    
                 
          </section>
 
